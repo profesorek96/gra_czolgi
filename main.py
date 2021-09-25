@@ -56,13 +56,11 @@ class Czolg:
         self.body.x+=2
         self.track.x+=2
         self.turret.x+=2
-        self.wyrzutnia.x+=2
 
     def lewo(self):
         self.body.x -= 2
         self.track.x -= 2
         self.turret.x -= 2
-        self.wyrzutnia.x-=2
     def turretup(self):
         if self.turret.angle>=0 and self.turret.angle<=80:
             self.turret.angle+=2
@@ -101,4 +99,3 @@ def update():
     czolg.update()
 
 pgzrun.go()
-
