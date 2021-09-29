@@ -10,8 +10,8 @@ class Pocisk:
     def draw(self):
         self.pocisk.draw()
     def update(self):
-        self.pocisk.x+=4
-        self.pocisk.y-=math.tan(math.radians(self.kat))*4
+        self.pocisk.x+=math.cos(math.radians(self.kat))*5
+        self.pocisk.y-=math.sin(math.radians(self.kat))*5
 
 class Wyrzutnia:
     def __init__(self):
